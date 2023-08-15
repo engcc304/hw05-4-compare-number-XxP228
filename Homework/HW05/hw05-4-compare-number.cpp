@@ -1,6 +1,6 @@
 /*
     จงเขียนโปรแกรมภาษาซีเพื่อรับค่าจากผู้ใช้จำนวน 2 ค่า และให้เปรียบเทียบกัน
-    
+
     Test case:
         Input 1 :
             6
@@ -25,3 +25,26 @@
     Output:
         Number1 equal Number2
 */
+#include <stdio.h>
+int main()
+{
+    int num1 = 0, num2 = 0;
+
+    printf("input number [1]: ");
+    scanf("%d", &num1);
+    printf("input number [2]: ");
+    scanf("%d", &num2);
+
+    if (num1 < num2)
+    {
+        printf("Number1 lower than Number2");
+    }
+    else if (num1 > num2)
+    {
+        printf("Number1 greater than Number2");
+    }
+    else if (num1 == num2)
+    {
+        printf("Number1 equal Number2");
+    }
+}
